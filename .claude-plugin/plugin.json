@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "rtl-daemon",
+  "version": "1.0.0",
+  "description": "Daemon MCP Server providing Spot Instance Alerts",
+  "author": {
+    "name": "Rhiannon AI LLC",
+    "url": "https://github.com/rhiannon-ai-llc"
+  },
+  "homepage": "https://github.com/rhiannon-ai-llc/rtldaemon-plugin",
+  "repository": "https://github.com/rhiannon-ai-llc/rtldaemon-plugin",
+  "license": "MIT",
+  "keywords": [
+    "spot", "hdl", "rtl"
+  ]
+}

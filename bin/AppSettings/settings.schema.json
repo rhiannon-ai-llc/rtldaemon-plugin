@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AppSettings Schema for RtlDaemon",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "WorkerOptions": {
+      "type": "object",
+      "properties": {
+        "Period": {
+          "type": "string",
+          "format": "duration"
+        }
+      }
+    }
+  },
+  "properties": {
+    "$schema": {
+      "const": "./settings.schema.json"
+    },
+    "Worker": { "$ref": "#/$defs/WorkerOptions" }
+  },
+  "required": ["$schema", "Worker"]
+}

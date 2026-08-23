@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "rtldaemon-plugin",
+  "owner": {
+    "name": "Rhiannon AI LLC",
+    "url": "https://github.com/rhiannon-ai-llc"
+  },
+  "description": "Plugin for RTL synthesis and place+route on fungible instances.",
+  "plugins": [
+    {
+      "name": "rtl-daemon",
+      "displayName": "RTL Daemon",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "Daemon MCP Server providing Spot Instance Alerts",
+      "author": {
+        "name": "Rhiannon AI LLC",
+        "url": "https://github.com/rhiannon-ai-llc"
+      },
+      "homepage": "https://github.com/rhiannon-ai-llc/rtldaemon-plugin",
+      "repository": "https://github.com/rhiannon-ai-llc/rtldaemon-plugin",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["spot", "hdl", "rtl"]
+    }
+  ]
+}

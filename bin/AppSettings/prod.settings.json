@@ -1,0 +1,6 @@
+{
+  "$schema": "./settings.schema.json",
+  "Worker": {
+    "Period": "PT5S"
+  }
+}
