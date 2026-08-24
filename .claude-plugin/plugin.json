@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin.json",
   "name": "rtl-daemon",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Daemon MCP Server providing Spot Instance Alerts",
   "author": {
     "name": "Rhiannon AI LLC",
