@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "${CLAUDE_PLUGIN_ROOT}/bin/jag-log",
+        "args": [
+          "--user"
+        ]
+      }
+    ],
+    "AssistantResponseText": [
+      {
+        "type": "command",
+        "command": "${CLAUDE_PLUGIN_ROOT}/bin/jag-log",
+        "args": [
+          "--agent"
+        ]
+      }
+    ]
+  }
+}
