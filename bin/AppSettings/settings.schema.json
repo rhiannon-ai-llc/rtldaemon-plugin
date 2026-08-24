@@ -10,15 +10,33 @@
         "Period": {
           "type": "string",
           "format": "duration"
+        },
+        "LogGroup": {
+          "type": "string"
         }
-      }
+      },
+      "required": ["Period", "LogGroup"]
+    },
+
+    "TeleportOptions": {
+      "type": "object",
+      "properties": {
+        "CredProfile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": ["CredProfile"]
     }
   },
   "properties": {
     "$schema": {
       "const": "./settings.schema.json"
     },
-    "Worker": { "$ref": "#/$defs/WorkerOptions" }
+    "Worker": { "$ref": "#/$defs/WorkerOptions" },
+    "Teleport": { "$ref":  "#/$defs/TeleportOptions" }
   },
-  "required": ["$schema", "Worker"]
+  "required": ["$schema", "Worker", "Teleport"]
 }

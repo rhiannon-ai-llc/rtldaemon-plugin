@@ -1,6 +1,10 @@
 {
   "$schema": "./settings.schema.json",
   "Worker": {
-    "Period": "PT5S"
+    "Period": "PT5S",
+    "LogGroup": "arn:aws:logs:us-east-1:765607524891:log-group:/airmarshal/messages"
+  },
+  "Teleport": {
+    "CredProfile": null
   }
 }

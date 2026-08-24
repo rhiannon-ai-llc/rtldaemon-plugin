@@ -1,7 +1,11 @@
 {
     "mcpServers": {
         "rtl-daemon": {
-            "command": "/home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon"
+            "command": "/home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon",
+            "args": [
+                "--stage",
+                "prod"
+            ]
         }
     }
 }
