@@ -1,3 +1,0 @@
-bin/* filter=lfs diff=lfs merge=lfs -text
-bin/rtl-daemon-mac-arm64 filter=lfs diff=lfs merge=lfs -text
-bin/AppSettings filter=lfs diff=lfs merge=lfs -text
