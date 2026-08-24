@@ -5,6 +5,8 @@
     "LogGroup": "arn:aws:logs:us-east-1:765607524891:log-group:/airmarshal/messages"
   },
   "Teleport": {
-    "CredProfile": null
+    "CredProfile": null,
+    "BucketRegion": "us-east-1",
+    "BucketName": "rhiannon-airmarshal-virginia-teleport-765607524891-us-east-1-an"
   }
 }

@@ -26,9 +26,15 @@
             "string",
             "null"
           ]
+        },
+        "BucketRegion": {
+          "type": "string"
+        },
+        "BucketName": {
+          "type": "string"
         }
       },
-      "required": ["CredProfile"]
+      "required": ["CredProfile", "BucketRegion", "BucketName"]
     }
   },
   "properties": {
