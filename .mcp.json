@@ -1,7 +1,7 @@
 {
     "mcpServers": {
         "rtl-daemon": {
-            "command": "cd ${CLAUDE_PLUGIN_ROOT}/bin && ./rtl-daemon"
+            "command": "/home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon"
         }
     }
 }gi
