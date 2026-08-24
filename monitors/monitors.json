@@ -1,7 +1,7 @@
 [
   {
     "name": "spot-vacate-monitor",
-    "command": "\"${CLAUDE_PLUGIN_ROOT}\"/bin/jag-log",
+    "command": "${CLAUDE_PLUGIN_ROOT}/bin/am-spot-scanner",
     "description": "Monitor Spot Instance Vacate Notifications"
   }
 ]
