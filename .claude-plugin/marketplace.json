@@ -11,7 +11,7 @@
       "name": "rtl-daemon",
       "displayName": "RTL Daemon",
       "source": "./",
-      "version": "1.8.0",
+      "version": "1.9.0",
       "description": "Daemon MCP Server providing Spot Instance Alerts",
       "author": {
         "name": "Rhiannon AI LLC",
