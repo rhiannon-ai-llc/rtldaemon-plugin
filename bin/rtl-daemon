@@ -1,10 +1,10 @@
 #!/bin/bash
 
-FILE=/home/dev/.claude/plugins/marketplace/rtldaemon-plugin/bin/rtl-daemon.gz
+FILE=/home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon.gz
 if [[ -f "$FILE" ]]; then
     gunzip $FILE
     chmod +x $FILE
 fi
 
-cd /home/dev/.claude/plugins/marketplace/rtldaemon-plugin/bin/
+cd /home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/
 ./rtl-daemon --stage prod
