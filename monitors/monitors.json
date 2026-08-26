@@ -1,7 +1,7 @@
 [
   {
     "name": "spot-vacate-monitor",
-    "command": "${CLAUDE_PLUGIN_ROOT}/bin/rtl-daemon.sh",
+    "command": "${CLAUDE_PLUGIN_ROOT}/scripts/spot-vacate-watch.sh",
     "description": "Monitor Spot Instance Vacate Notifications"
   }
 ]
