@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AppSettings Schema for RtlDaemon",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "PollOptions": {
+      "type": "object",
+      "properties": {
+        "TopicArn": {
+          "type": "string"
+        }
+      },
+      "required": ["TopicArn"]
+    },
+    "WorkerOptions": {
+      "type": "object",
+      "properties": {
+        "Period": {
+          "type": "string",
+          "format": "duration"
+        },
+        "LogGroup": {
+          "type": "string"
+        }
+      },
+      "required": ["Period", "LogGroup"]
+    },
+
+    "TeleportOptions": {
+      "type": "object",
+      "properties": {
+        "CredProfile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "BucketRegion": {
+          "type": "string"
+        },
+        "BucketName": {
+          "type": "string"
+        }
+      },
+      "required": ["CredProfile", "BucketRegion", "BucketName"]
+    }
+  },
+  "properties": {
+    "$schema": {
+      "const": "./settings.schema.json"
+    },
+    "Worker": { "$ref": "#/$defs/WorkerOptions" },
+    "Teleport": { "$ref":  "#/$defs/TeleportOptions" },
+    "Poller": { "$ref":  "#/$defs/PollOptions" }
+  },
+  "required": ["$schema", "Worker", "Teleport"]
+}
