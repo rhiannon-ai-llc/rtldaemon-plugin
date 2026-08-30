@@ -5,7 +5,7 @@
     "KeyFormatStringPrefix": "build-artifacts/${buildId}/"
   },
   "BuildReportStatus": {
-    "TopicArn": "arn:aws:sns:us-east-1:765607524891:spot-warnings",
+    "TopicArn": "arn:aws:sns:us-east-1:765607524891:build-updates-feed",
     "Region": "us-east-1"
   }
 }
