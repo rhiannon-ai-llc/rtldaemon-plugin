@@ -1,0 +1,11 @@
+{
+  "$schema": "./settings.schema.json",
+  "FswatchWorker": {
+    "BucketName": "rhiannon-pdi-bitstream-products",
+    "KeyFormatStringPrefix": "build-artifacts/${buildId}/"
+  },
+  "BuildReportStatus": {
+    "TopicArn": "arn:aws:sns:us-east-1:765607524891:spot-warnings",
+    "Region": "us-east-1"
+  }
+}

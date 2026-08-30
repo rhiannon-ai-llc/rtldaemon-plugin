@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AppSettings Schema for RtlDaemon",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "BuildKeyFormatString": {
+      "type": "string",
+      "pattern": "^.+\\${buildId}.+$"
+    },
+    "FswatchWorkerOptions": {
+      "type": "object",
+      "properties": {
+        "BucketName": {
+          "type": "string"
+        },
+        "KeyFormatStringPrefix": {
+          "$ref": "#/$defs/BuildKeyFormatString"
+        }
+      },
+      "required": ["BucketName", "KeyFormatStringPrefix"]
+    },
+    "BuildReportStatusConf": {
+      "type": "object",
+      "properties": {
+        "TopicArn": {
+          "type": "string"
+        },
+        "Region": {
+          "type": "string"
+        },
+        "CredentialProfileName": {
+          "type": "string"
+        }
+      },
+      "required": ["TopicArn", "Region"]
+    }
+  },
+  "properties": {
+    "$schema": {
+      "const": "./settings.schema.json"
+    },
+    "FswatchWorker": { "$ref": "#/$defs/FswatchWorkerOptions" },
+    "BuildReportStatus": { "$ref":  "#/$defs/BuildReportStatusConf" }
+  },
+  "required": ["$schema", "FswatchWorker", "BuildReportStatus"]
+}
