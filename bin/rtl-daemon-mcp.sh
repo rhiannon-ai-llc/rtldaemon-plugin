@@ -8,6 +8,10 @@ DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 BIN="$DIR/rtl-daemon-mcp"
 GZ="$BIN.gz"
 
+if [ -f "$BIN" ] && [ -f "$GZ" ]; then
+    rm -f "$BIN"
+fi
+
 if [ ! -f "$BIN" ] && [ -f "$GZ" ]; then
     TMP=$(mktemp "$BIN.XXXXXX")
     trap 'rm -f "$TMP"' EXIT
