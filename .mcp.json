@@ -1,7 +1,7 @@
 {
     "mcpServers": {
         "rtl-daemon": {
-            "command": "${CLAUDE_PLUGIN_ROOT}/bin/rtl-daemon-mcp.sh"
+            "command": "/home/dev/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon-mcp.sh"
         }
     }
 }
