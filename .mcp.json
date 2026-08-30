@@ -1,9 +1,9 @@
 {
     "mcpServers": {
         "rtl-daemon": {
-            "command": "/home/ubuntu/.claude/plugins/marketplaces/rtldaemon-plugin/bin/rtl-daemon-mcp.sh",
+            "command": "${CLAUDE_PLUGIN_ROOT}/bin/rtl-daemon-mcp.sh",
             "env": {
-                "BIN_DIR": "/home/ubuntu/.claude/plugins/marketplaces/rtldaemon-plugin/bin/"
+                "BIN_DIR": "${CLAUDE_PLUGIN_ROOT}/bin/"
             }
         }
     }
