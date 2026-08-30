@@ -27,4 +27,4 @@ if [ ! -x "$BIN" ]; then
     exit 1
 fi
 
-exec "$BIN"
+exec "$BIN" --stage prod
