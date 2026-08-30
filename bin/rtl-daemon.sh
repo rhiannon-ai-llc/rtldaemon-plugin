@@ -27,5 +27,4 @@ if [ ! -x "$BIN" ]; then
     exit 1
 fi
 
-[ "$#" -eq 0 ] && set -- serve
-exec "$BIN" "$@"
+exec "$BIN"
