@@ -27,4 +27,4 @@ if [ ! -x "$BIN" ]; then
     exit 1
 fi
 
-exec "$BIN" --stage prod
+APP_SETTINGS_PATH="${DIR}/AppSettings" "$BIN" --stage prod
