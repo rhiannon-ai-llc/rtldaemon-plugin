@@ -1,10 +1,7 @@
 {
     "mcpServers": {
         "rtl-daemon": {
-            "command": "${CLAUDE_PLUGIN_ROOT}/bin/rtl-daemon.sh",
-            "args": [
-                "serve"
-            ]
+            "command": "${CLAUDE_PLUGIN_ROOT}/bin/rtl-daemon.sh"
         }
     }
 }
